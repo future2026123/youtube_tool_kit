@@ -501,6 +501,18 @@ details p {
   color: #c9c1b2;
 }
 
+.site-footer div,
+.business-info {
+  display: grid;
+  gap: 6px;
+}
+
+.business-info {
+  margin: 0;
+  font-style: normal;
+  text-align: right;
+}
+
 @media (max-width: 1060px) {
   .nav-links {
     display: none;
@@ -566,5 +578,9 @@ details p {
   .site-footer {
     flex-direction: column;
     padding: 34px 20px;
+  }
+
+  .business-info {
+    text-align: left;
   }
 }
