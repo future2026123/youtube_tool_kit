@@ -8,20 +8,20 @@
 - 썸네일 투표 프로그램
 - CreatorFlow Studio
 
-## 결제 연결
+## 구매 링크 연결
 
-Latpeed에서 각 프로그램 상품을 만든 뒤 `config.js`의 제품별 `checkoutUrl` 값을 실제 상품 URL로 바꿉니다.
+결제 서비스에서 각 프로그램 상품을 만든 뒤 `config.js`의 제품별 `checkoutUrl` 값을 실제 구매 URL로 바꿉니다.
 
 ```js
 window.SITE_CONFIG = {
   products: {
     scriptWriter: {
       name: "대본작성 프로그램",
-      checkoutUrl: "https://www.latpeed.com/실제-대본작성-상품"
+      checkoutUrl: "https://example.com/script-writer-checkout"
     },
     thumbnailVote: {
       name: "썸네일 투표 프로그램",
-      checkoutUrl: "https://www.latpeed.com/실제-썸네일-상품"
+      checkoutUrl: "https://example.com/thumbnail-vote-checkout"
     }
   }
 };

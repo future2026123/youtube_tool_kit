@@ -1,7 +1,7 @@
 (function () {
   const config = window.SITE_CONFIG || {};
   const products = config.products || {};
-  const defaultCheckoutUrl = config.defaultCheckoutUrl || config.latpeedCheckoutUrl || "https://www.latpeed.com/";
+  const defaultCheckoutUrl = config.defaultCheckoutUrl || config.checkoutUrl || "#products";
   const supportEmail = config.supportEmail || "support@example.com";
 
   document.querySelectorAll(".js-checkout").forEach((link) => {
