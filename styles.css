@@ -293,6 +293,14 @@ h3 {
   padding: 92px 0;
 }
 
+.anchor-alias {
+  position: relative;
+  top: -90px;
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
 .problem,
 .proof,
 .buy-card {
