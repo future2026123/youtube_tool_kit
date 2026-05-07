@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="promo-banner">
+      <span class="promo-badge">LAUNCH</span>
+      <span>초기 구매자에게 프로젝트 템플릿 팩을 함께 제공합니다.</span>
+    </div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="CreatorFlow Studio 홈">
         <span class="brand-mark">CF</span>
@@ -15,6 +20,7 @@
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a href="#features">기능</a>
+        <a href="#workflow">워크플로우</a>
         <a href="#pricing">가격</a>
         <a href="#faq">문의</a>
       </nav>
@@ -23,31 +29,46 @@
 
     <main id="top">
       <section class="hero">
-        <img class="hero-image" src="assets/hero-workspace.png" alt="유튜브 제작 소프트웨어 작업 화면">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">유튜브 제작자를 위한 올인원 워크스페이스</p>
-          <h1>기획부터 업로드 준비까지 더 빠르게 끝내는 제작 소프트웨어</h1>
-          <p class="hero-copy">스크립트 정리, 컷 편집 체크리스트, 썸네일 기획, 영상별 진행 상태를 한 화면에서 관리하세요.</p>
+        <div class="hero-copy-block">
+          <span class="tag-chip">YouTube Creator Workspace</span>
+          <h1>영상 제작 과정을 한 장의 보드처럼 정리하세요.</h1>
+          <p class="hero-copy">아이디어, 스크립트, 편집 체크리스트, 썸네일 문구, 발행 준비를 한 화면에서 관리하는 유튜브 제작 소프트웨어입니다.</p>
           <div class="hero-actions">
             <a class="primary-action js-checkout" href="https://www.latpeed.com/" target="_blank" rel="noopener">Latpeed로 결제하기</a>
             <a class="secondary-action" href="#features">기능 보기</a>
           </div>
-          <dl class="hero-stats" aria-label="제품 요약">
-            <div>
-              <dt>3단계</dt>
-              <dd>기획, 제작, 발행</dd>
-            </div>
-            <div>
-              <dt>1회 구매</dt>
-              <dd>라이선스 제공</dd>
-            </div>
-            <div>
-              <dt>한국어</dt>
-              <dd>제작 흐름 지원</dd>
-            </div>
-          </dl>
         </div>
+
+        <div class="board-shell" aria-label="CreatorFlow Studio 제품 미리보기">
+          <img src="assets/hero-workspace.png" alt="유튜브 제작 소프트웨어 작업 화면">
+          <div class="sticky-note note-yellow">
+            <span>기획</span>
+            <strong>다음 영상 주제 12개</strong>
+          </div>
+          <div class="sticky-note note-rose">
+            <span>썸네일</span>
+            <strong>3안 비교 완료</strong>
+          </div>
+          <div class="sticky-note note-teal">
+            <span>발행</span>
+            <strong>설명란 검수 대기</strong>
+          </div>
+        </div>
+
+        <dl class="hero-stats" aria-label="제품 요약">
+          <div>
+            <dt>3단계</dt>
+            <dd>기획, 제작, 발행</dd>
+          </div>
+          <div>
+            <dt>1회 구매</dt>
+            <dd>라이선스 제공</dd>
+          </div>
+          <div>
+            <dt>한국어</dt>
+            <dd>제작 흐름 지원</dd>
+          </div>
+        </dl>
       </section>
 
       <section class="section product-strip" aria-label="제품 핵심">
@@ -59,29 +80,29 @@
       </section>
 
       <section class="section feature-grid" id="features">
-        <article class="feature-card">
+        <article class="feature-card feature-yellow">
           <span class="feature-icon">01</span>
           <h3>콘텐츠 플래너</h3>
           <p>아이디어, 제목 후보, 키워드, 촬영 메모를 영상별로 묶어 관리합니다.</p>
         </article>
-        <article class="feature-card">
+        <article class="feature-card feature-rose">
           <span class="feature-icon">02</span>
           <h3>편집 체크리스트</h3>
           <p>컷 정리, 자막, B-roll, 효과음, 검수 항목을 단계별로 체크합니다.</p>
         </article>
-        <article class="feature-card">
+        <article class="feature-card feature-teal">
           <span class="feature-icon">03</span>
           <h3>썸네일 보드</h3>
           <p>썸네일 문구, 색상 방향, 참고 이미지를 한 곳에 모아 비교합니다.</p>
         </article>
-        <article class="feature-card">
+        <article class="feature-card feature-coral">
           <span class="feature-icon">04</span>
           <h3>발행 준비</h3>
           <p>설명란, 태그, 고정 댓글, 업로드 전 확인 항목을 미리 정리합니다.</p>
         </article>
       </section>
 
-      <section class="section workflow">
+      <section class="section workflow" id="workflow">
         <div class="workflow-copy">
           <span class="section-label">Workflow</span>
           <h2>혼자 제작해도 팀처럼 정리된 상태를 유지하세요.</h2>
@@ -99,10 +120,13 @@
         <div class="pricing-copy">
           <span class="section-label">Pricing</span>
           <h2>CreatorFlow Studio 라이선스</h2>
-          <p>Latpeed 결제 페이지로 이동해 결제를 완료하면, 구매자에게 다운로드와 라이선스 안내를 제공하는 구조로 운영할 수 있습니다.</p>
+          <p>Latpeed 결제 페이지로 이동해 결제를 완료하면 구매자에게 다운로드와 라이선스 안내를 제공하는 구조로 운영할 수 있습니다.</p>
         </div>
         <article class="price-card">
-          <p class="plan-name">Creator License</p>
+          <div class="price-topline">
+            <p class="plan-name">Creator License</p>
+            <span class="tag-chip blue">추천</span>
+          </div>
           <div class="price">₩49,000</div>
           <ul>
             <li>윈도우용 설치 파일 제공</li>
@@ -115,6 +139,7 @@
       </section>
 
       <section class="section faq" id="faq">
+        <span class="section-label">FAQ</span>
         <h2>구매 전 확인</h2>
         <details>
           <summary>Latpeed 결제는 어떻게 연결되나요?</summary>
@@ -132,7 +157,10 @@
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 CreatorFlow Studio</span>
+      <div>
+        <strong>CreatorFlow Studio</strong>
+        <span>유튜브 제작자를 위한 소프트웨어 판매 사이트</span>
+      </div>
       <a id="supportEmail" href="mailto:support@example.com">support@example.com</a>
     </footer>
 
