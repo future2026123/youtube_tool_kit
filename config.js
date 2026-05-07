@@ -1,18 +1,11 @@
 window.SITE_CONFIG = {
-  siteName: "CreatorFlow Market",
+  siteName: "Thumbnail Maker",
   supportEmail: "support@example.com",
   defaultCheckoutUrl: "https://www.latpeed.com/",
   products: {
-    scriptWriter: {
-      name: "대본작성 프로그램",
-      checkoutUrl: "https://www.latpeed.com/"
-    },
-    thumbnailVote: {
-      name: "썸네일 투표 프로그램",
-      checkoutUrl: "https://www.latpeed.com/"
-    },
-    creatorStudio: {
-      name: "CreatorFlow Studio",
+    thumbnailMaker: {
+      name: "Thumbnail Maker",
+      price: "KRW 29,000",
       checkoutUrl: "https://www.latpeed.com/"
     }
   }
