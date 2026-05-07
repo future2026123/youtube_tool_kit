@@ -34,11 +34,18 @@ body {
   background: var(--canvas);
   font-family: "Roobert PRO", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
   line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+code,
+pre {
+  word-break: break-all;
 }
 
 .promo-banner {
