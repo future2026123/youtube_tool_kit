@@ -329,7 +329,8 @@ h2 {
 .product-strip p,
 .workflow-copy p,
 .pricing-copy p,
-.bundle-copy p {
+.bundle-copy p,
+.custom-copy p {
   color: var(--slate);
   font-size: 18px;
 }
@@ -468,7 +469,8 @@ details {
 
 .workflow,
 .pricing,
-.bundle {
+.bundle,
+.custom-order {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 48px;
@@ -503,6 +505,61 @@ details {
   color: var(--ink-deep);
   font-size: 18px;
   font-weight: 600;
+}
+
+.custom-order {
+  padding: 64px;
+  background: var(--surface);
+  border: 1px solid var(--hairline-soft);
+  border-radius: 32px;
+}
+
+.custom-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.custom-card {
+  padding: 26px;
+  background: var(--canvas);
+  border: 1px solid var(--hairline-soft);
+  border-radius: 24px;
+}
+
+.custom-card:nth-child(1) {
+  background: var(--yellow-soft);
+}
+
+.custom-card:nth-child(2) {
+  background: var(--rose);
+}
+
+.custom-card:nth-child(3) {
+  background: var(--teal);
+}
+
+.custom-step {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.custom-card h3 {
+  margin-bottom: 10px;
+  color: var(--ink-deep);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.custom-card p {
+  margin-bottom: 0;
+  color: var(--slate);
+}
+
+.custom-contact {
+  margin-top: 4px;
 }
 
 .pricing {
@@ -671,7 +728,8 @@ details p {
   .product-strip,
   .workflow,
   .pricing,
-  .bundle {
+  .bundle,
+  .custom-order {
     grid-template-columns: 1fr;
   }
 
@@ -751,6 +809,11 @@ details p {
   }
 
   .bundle {
+    padding: 34px 20px;
+    border-radius: 24px;
+  }
+
+  .custom-order {
     padding: 34px 20px;
     border-radius: 24px;
   }

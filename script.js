@@ -26,4 +26,8 @@
     support.href = `mailto:${supportEmail}`;
     support.textContent = supportEmail;
   }
+
+  document.querySelectorAll(".custom-contact").forEach((link) => {
+    link.href = `mailto:${supportEmail}?subject=${encodeURIComponent("커스텀 프로그램 제작 문의")}`;
+  });
 })();
